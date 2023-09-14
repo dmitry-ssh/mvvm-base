@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using MVVMBase.Annotations;
 
 namespace MVVMBase.ViewModels;
 
