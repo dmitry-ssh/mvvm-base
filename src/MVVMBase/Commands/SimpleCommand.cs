@@ -11,15 +11,9 @@ public class SimpleCommand : ICommand
         this.execute = execute;
     }
 
-    public bool CanExecute(object? parameter)
-    {
-        throw new NotImplementedException();
-    }
+    public bool CanExecute(object? parameter) => true;
 
-    public void Execute(object? parameter)
-    {
-        execute.Invoke();
-    }
+    public void Execute(object? parameter) => execute.Invoke();
 
     public event EventHandler? CanExecuteChanged;
 }
